@@ -1,0 +1,743 @@
+/* Custom styles using Modam font for a modern black and white theme */
+
+/* Font import */
+@font-face {
+  font-family: 'Modam';
+  src: url('../fonts/Modam-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('../fonts/Modam-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('../fonts/Modam-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('../fonts/Modam-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('../fonts/Modam-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('../fonts/Modam-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('../fonts/Modam-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Modam';
+  src: url('../fonts/Modam-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply Modam font to all elements */
+body, h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea {
+  font-family: 'Modam', sans-serif !important;
+}
+
+/* Custom styling for headings */
+h1, .h1 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+h2, .h2 {
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+h3, .h3 {
+  font-weight: 600;
+}
+
+h4, .h4 {
+  font-weight: 600;
+}
+
+/* Enhance navbar */
+.navbar-brand {
+  font-weight: 700 !important;
+  letter-spacing: -0.3px;
+}
+
+.nav-link {
+  font-weight: 500 !important;
+}
+
+/* Button styling */
+.btn {
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Card styling */
+.card {
+  border-radius: 12px !important;
+}
+
+.card-title {
+  font-weight: 700 !important;
+  letter-spacing: -0.2px;
+}
+
+/* Footer styling */
+.footer {
+  font-weight: 400 !important;
+}
+
+/* Modern black and white accents */
+.text-gradient.text-primary {
+  background-image: linear-gradient(310deg, #000000, #444444) !important;
+}
+
+.bg-gradient-primary {
+  background-image: linear-gradient(310deg, #000000, #444444) !important;
+}
+
+/* Custom badge styling */
+.badge {
+  font-family: 'Modam', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* Input styling */
+.form-control {
+  font-family: 'Modam', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* Paragraph styling */
+p {
+  font-weight: 400 !important;
+}
+
+/* Add some modern spacing */
+.section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+/* Add custom hover effects */
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* Custom blockquote styling */
+blockquote {
+  font-family: 'Modam', sans-serif !important;
+  font-weight: 300 !important;
+  font-style: italic;
+  border-left: 3px solid #000;
+}
+
+/* Black and White Theme with Accent Colors */
+
+:root {
+  /* Primary Colors */
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --accent-color: #2196F3; /* Blue accent for innovation */
+  
+  /* Text Colors */
+  --text-color: #000000;
+  --text-color-light: #666666;
+  --text-color-lighter: #999999;
+  
+  /* Background Colors */
+  --background-color: #ffffff;
+  --surface-color: #f5f5f5;
+  --surface-color-dark: #e0e0e0;
+  
+  /* Border Colors */
+  --border-color: #e0e0e0;
+  --border-color-dark: #cccccc;
+  
+  /* Shadow Colors */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-color-dark: rgba(0, 0, 0, 0.2);
+  
+  /* Status Colors */
+  --success-color: #4CAF50;
+  --warning-color: #FFC107;
+  --error-color: #F44336;
+  --info-color: #2196F3;
+}
+
+/* Enhanced Material UI Components */
+.card {
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Button Styling */
+.btn {
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--text-color-light);
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Accent Buttons */
+.btn-accent {
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  border: none;
+}
+
+.btn-accent:hover {
+  background: var(--info-color);
+  transform: translateY(-2px);
+}
+
+/* Navigation */
+.navbar {
+  background: var(--background-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Material UI Elevation */
+.elevation-1 {
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.elevation-2 {
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.elevation-3 {
+  box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+/* Form Elements */
+.form-control {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+}
+
+/* Enhanced Cards */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.card-text {
+  color: var(--text-color-light);
+}
+
+/* Enhanced Lists */
+.list-group-item {
+  border: none;
+  padding: 12px 0;
+  color: var(--text-color);
+}
+
+.list-group-item:hover {
+  background: var(--surface-color);
+}
+
+/* Enhanced Tables */
+.table {
+  color: var(--text-color);
+}
+
+.table thead th {
+  border-bottom: 2px solid var(--border-color);
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Enhanced Alerts */
+.alert {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+/* Enhanced Badges */
+.badge {
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.badge-primary {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.badge-accent {
+  background: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+/* Enhanced Progress Bars */
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--surface-color);
+}
+
+.progress-bar {
+  background: var(--accent-color);
+}
+
+/* Enhanced Tooltips */
+.tooltip {
+  font-size: 14px;
+}
+
+/* Enhanced Modals */
+.modal-content {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border-color);
+}
+
+/* Enhanced Carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* Enhanced Pagination */
+.pagination .page-link {
+  color: var(--primary-color);
+  border: none;
+  margin: 0 4px;
+  border-radius: 4px;
+}
+
+.pagination .page-item.active .page-link {
+  background: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+/* Enhanced Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color-light);
+}
+
+/* Status Colors */
+.text-success { color: var(--success-color) !important; }
+.text-warning { color: var(--warning-color) !important; }
+.text-error { color: var(--error-color) !important; }
+.text-info { color: var(--info-color) !important; }
+
+.bg-success { background-color: var(--success-color) !important; }
+.bg-warning { background-color: var(--warning-color) !important; }
+.bg-error { background-color: var(--error-color) !important; }
+.bg-info { background-color: var(--info-color) !important; }
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(310deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gradient Background */
+.bg-gradient {
+  background: linear-gradient(310deg, var(--primary-color), var(--accent-color));
+}
+
+/* Enhanced Images */
+.img-fluid {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Enhanced Sections */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Enhanced Grid System */
+.row {
+  margin-bottom: 30px;
+}
+
+/* Enhanced Footer */
+.footer {
+  background: var(--surface-color);
+  padding: 40px 0;
+}
+
+.footer h5 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: var(--text-color-light);
+}
+
+/* Material UI Icons */
+.material-icons {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Enhanced Buttons */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface-color);
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-icon:hover {
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+/* Enhanced Navigation */
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Enhanced Dropdowns */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  color: var(--text-color);
+}
+
+.dropdown-item:hover {
+  background: var(--surface-color);
+}
+
+/* Enhanced Tabs */
+.nav-tabs {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  color: var(--text-color-light);
+  padding: 12px 24px;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* Enhanced Accordion */
+.accordion-item {
+  border: none;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.accordion-button {
+  background: var(--background-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--surface-color);
+  color: var(--primary-color);
+}
+
+/* Enhanced Spinners */
+.spinner-border {
+  color: var(--primary-color);
+}
+
+/* Enhanced Toasts */
+.toast {
+  background: var(--background-color);
+  border: none;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  border-radius: 8px;
+}
+
+.toast-header {
+  background: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Enhanced Offcanvas */
+.offcanvas {
+  background: var(--background-color);
+  border: none;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Enhanced Breadcrumbs */
+.breadcrumb {
+  background: var(--surface-color);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.breadcrumb-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: var(--text-color-light);
+}
+
+/* Enhanced Dropdowns */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  color: var(--text-color);
+}
+
+.dropdown-item:hover {
+  background: var(--surface-color);
+}
+
+/* Enhanced Tabs */
+.nav-tabs {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  color: var(--text-color-light);
+  padding: 12px 24px;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* Enhanced Accordion */
+.accordion-item {
+  border: none;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.accordion-button {
+  background: var(--background-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--surface-color);
+  color: var(--primary-color);
+}
+
+/* Enhanced Spinners */
+.spinner-border {
+  color: var(--primary-color);
+}
+
+/* Enhanced Toasts */
+.toast {
+  background: var(--background-color);
+  border: none;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  border-radius: 8px;
+}
+
+.toast-header {
+  background: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Enhanced Offcanvas */
+.offcanvas {
+  background: var(--background-color);
+  border: none;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Enhanced Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color-light);
+} 
